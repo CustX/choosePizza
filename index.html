@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ваша пиццерия</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍕</text></svg>">
+
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header__content">
+				<div class="logo">
+					<a href="./index.html">🍕Ваша пиццерия</a>
+				</div>
+				<ul class="header__menu">
+					<li class="header__menu__content"><a href="./contacts.html">Контакты</a></li>
+					<li class="header__menu__content"><a href="./about.html">О нас</a></li>
+					<li class="header__menu__content"><a href="./delivery.html">Доставка</a></li>
+				</ul>
+				<img src="./img/burger.png" alt="" class="burger__menu">
+			</div>
+		</div>
+	</header>
+	<section class="module">
+		<div class="container">	
+			<div class="module__content">
+				<div class="module__header">
+					<div class="module__content__hedaer__wrapper">
+						<h1>Собери пиццу!</h1>
+						<p>Поможем подобрать то, что подходит именно <u> тебе.</u></p>
+					</div>
+				</div>
+				<div class="app">
+					<div class="app__header">
+						🤤Твоя будущая пицца
+					</div>
+					<div class="app__content">
+						<div class="app__content__item">
+							<ul class="quiz active" id="type">
+								<li class="veget">
+									<h1>Без мяса</h1>
+									<p class="descrip">Вкусная пицца без мяса</p>
+								</li>
+								<li class="meat">
+									<h1>Мясная</h1>
+									<p class="descrip">Вкусная пицца с мясом</p>
+								</li>
+							</ul>
+							<ul class="quiz slide" id="filling">
+								<li class="next">
+									<h1>Продолжить</h1>
+									<p>
+										Завершить выбор основного ингредиента и перейти к следующему этапу
+									</p>
+								</li>
+							</ul>
+							<ul class="quiz slide" id="veget">
+								<li class="next">
+									<h1>Продолжить</h1>
+									<p>
+										Завершить выбор овощей и перейти к следующему этапу
+									</p>
+								</li>
+							</ul>
+							<ul class="quiz slide" id="sauce">
+								<li  class="next">
+									<h1>Завершить</h1>
+									<p>
+										Завершить выбор основного ингредиента и перейти к следующему этапу
+									</p>
+								</li>
+							</ul>
+							<div class="finish slide">
+								<div class="finish__wrapper">
+									<div class="finish__container">
+										<img id="pic" alt="">
+										<p class="descrip">fefe</p>
+										<ul class="select__size">
+											<li class="size active" id="1">
+												25см
+											</li>
+											<li class="size" id="2">
+												30см
+											</li>
+											<li class="size" id="3">
+												35см
+											</li>
+										</ul>
+										<div class="button">Купить</div>
+										<p class="next_pizza">
+											Хочу другую
+										</p>
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="pop__up">
+		<div class="pop__up__content">
+			<div class="pop__up__content__header">
+				<h1>Закажи пиццу по этому телефону</h1>
+			</div>
+			<div class="pop__up__content__body">
+				<a href = "tel:+78005553535" class="phone">8-(800)-555-35-35</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer__content">
+				<h1>Дипломная работа</h1>
+				<h1>Миненко Д. И. 22-25</h1>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/main.js"></script>
+</html>

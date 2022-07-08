@@ -1,0 +1,147 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+.burger__menu {
+	display: none;
+	height: 26px;
+	width: 26px;
+	margin: 0 10px;
+	cursor: pointer;
+	transition: height .2s, width .2s;
+	position: absolute;
+	left: calc(100% - 52px);
+}
+.burger__menu:hover {
+	height: 30px;
+	width: 30px;
+}
+/*Шапка*/
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+header {
+	height: 50px;
+	box-shadow: 0 0 25px 1px rgba(221, 221, 221, 0.5);
+	background-color: white;
+}
+body {
+	background-color: rgba(221, 221, 221, 0.1);
+}
+.header__content .logo {
+	font-size: 24px;
+	margin-left: 15px;
+}
+.header__content .logo a {
+	text-decoration: none;
+	color: black;
+}
+.header__content, .header__menu, .header__menu__content {
+	display: flex;
+}
+.header__content {
+	height: 50px;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__menu__content a{
+	color: black;
+	text-decoration: none;
+	padding-right: 15px;
+	padding-left: 15px;
+	transition: 0.3s;
+}
+.header__menu__content a:hover {
+	color: gray;
+}
+
+/*Зона доставки*/
+.module {
+	height: 100vh;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.info h1 {
+	margin: 25px 0;
+}
+.price li{
+	margin: 5px 0;
+}
+.price {
+	margin-bottom: 30px;
+}
+
+/*Подвал*/
+footer {
+	height: 50px;
+	background-color: rgba(24, 24, 24, 1);
+	box-shadow: 0 0 25px 1px rgba(221, 221, 221, 0.2);
+}
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: lightgray;
+	height: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.footer__content h1 {
+	font-weight: 400;
+	font-size: 16px;
+}
+iframe {
+	height: 600px;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 950px;
+	}
+}
+@media(max-width: 992px) {
+	.container {
+		max-width: 750px;
+	}
+	iframe {
+		height: 700px;
+	}
+}
+@media(max-width: 767px) {
+	.container {
+		max-width: none;
+	}
+	.burger__menu{
+		display: block;
+	}
+	.header__menu {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		right: 0;
+		background-color: white;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: none;
+		opacity: 0;
+	}
+	.header__menu__content{
+		margin-top: 15px;
+		font-size: 25px;
+	}
+	.header__content {
+		align-items:;
+	}
+	.footer__content h1{
+		font-size: 15px;
+	}
+}

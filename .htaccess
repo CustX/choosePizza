@@ -1,4 +1,3 @@
 RewriteEngine On
-RewriteCond %{REQUEST_URI} ! \.html$
-RewriteCond %{REQUEST_URI} ! /$
-RewriteRule ^(.*)$ $1.html
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://custx.github.io/ [R=301,L]
